@@ -1,0 +1,9 @@
+{% load is_even %}
+<html>
+    <h1>Even Number is:</h1>
+    {% for x in data %}
+    {% if x|is_even %}
+    {{x}}
+    {% endif %}
+    {% endfor %}
+</html>
